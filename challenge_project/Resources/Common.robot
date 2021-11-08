@@ -4,7 +4,6 @@ Resource    ../Resources/PO/Bottom.robot
 Resource    ../Resources/PO/LandingPageTop.robot
 Resource    ../Resources/PO/Navbar.robot
 
-*** Variables ***
 
 *** Keywords ***
 Begin Web Test
@@ -19,9 +18,8 @@ Open and check Website
     LandingPageTop.Verify Page Loaded
 
 Go to the Team
-    LandingPageTop.Load
-    LandingPageTop.Verify Page Loaded
     Navbar.Visit Team
+    Bottom.Verify Team Opened
 
 Check the Team page
-    Bottom.Verify Team Opened
+    Bottom.Verify Team Has Needed Text
