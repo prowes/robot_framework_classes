@@ -1,6 +1,7 @@
 *** Settings ***
 Library  SeleniumLibrary
 
+
 *** Keywords ***
 Load
     Go To  ${START_URL}
